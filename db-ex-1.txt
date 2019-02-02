@@ -1,0 +1,44 @@
+tabella: players
+
+colonne:
+  - ID | INT primary_key auto_increment unique
+  - name | VARCHAR(15) NOT NULL
+  - lastname | VARCHAR(15) NOT NULL
+  - bio | TEXT
+  - team | VARCHAR(15) NOT NULL
+  - altezza | FLOAT(3, 2)
+  - peso | FLOAT(5, 2)
+  - data_nascita | DATE
+  - media_punti | FLOAT(4, 2)
+  - media_2_punti | FLOAT(4, 2)
+  - media_3_punti | FLOAT(4, 2)
+  - numero_maglia | TINYINT
+  - ruolo | VARCHAR(5)
+  - lega appartenenza | VARCHAR(3)
+  - ranking giocatore | SMALLINT
+  - immagine | VARCHAR(50)
+  - nazie nascita | VARCHAR(5)
+  - infortunato | TINYINT DEFAULT 0
+  - stipendio | FLOAT(4, 2)
+
+  tabella: cars
+
+  colonne:
+  - ID | INT primary_key auto_increment unique
+  - marca | VARCHAR(20) NOT NULL
+  - codice telaio | VARCHAR(20) NOT NULL UNIQUE
+  - targa | VARCHAR(10) NOT NULL UNIQUE
+  - colorazione | VARCHAR(5) DEFAULT white
+  - numero porte | TINYINT
+  - consumo | TINYINT
+  - cilindrata | FLOAT(4, 2)
+  - cavalli | SMALLINT
+  - alimentazione | VARCHAR(5)
+  - anno immatricolazione | YEAR
+  - numero proprietari | TINYINT
+  - passaggio_incluso | TINYINT DEFAULT 0
+  - provincia | VARCHAR(3)
+  - prezzo | SMALLINT
+  - valuta | VARCHAR(3)
+  - optional | text
+  - allestimento | VARCHAR(25)
